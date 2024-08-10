@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+/*Todas as demais midias*/
+
+/* Typical Device Breakpoints 
+Pequenas Telas: até 600px
+Celular:*/
+
+@media print { /* IMPRESSÃO */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body {
+        background-image: url(../imagens/icon-print.png);
+    }
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after {
+        content: 'Essa impressão foi feita através do site www.iarleysouza.com.br';
+    }
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #tv {display: none;}
+    #pc {display: none;}
+    #print {display: block;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /* TABLET */
+    body {
+        background-image: url(../imagens/back-tablet.jpg);
+
+    }
+    #phone {display: none;}
+    #tablet {display: block;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) { /* DESKTOP */
+    body {
+        background-image: url(../imagens/back-pc.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #tv {display: none;}
+    #pc {display: block;}
+    #print {display: none;}
+}
+@media screen and (min-width: 1200px) { /* GRANDES TELAS */
+    body {
+        background-image: url(../imagens/back-tv.jpg);
+    }
+    #phone {display: none;}
+    #tablet {display: none;}
+    #tv {display: block;}
+    #pc {display: none;}
+}

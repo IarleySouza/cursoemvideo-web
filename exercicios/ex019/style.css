@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+/* * {
+    height: 100%;
+} */
+
+body {
+    background-color: rgba(128, 179, 162, 0.377);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#principal {
+    color: black;
+    background-color: azure;
+    border-radius: 1em;
+}
+
+h1 {
+    color: rgb(110, 185, 123);
+}
+h2 {
+    color: rgb(21, 109, 80);
+}
+
+.basico {
+    color: rgb(27, 32, 31);
+    background-color: bisque;
+    border-radius: 1em;
+
+}
+.intermediario{
+    color: rgba(148, 76, 112, 0.76);
+}
+.avancado {
+    color: yellowgreen;
+}

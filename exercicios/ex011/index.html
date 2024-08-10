@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos deferentes ou siplesmente aumente e diminua o tamanho do navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Foto grande">
+    </picture>
+
+    <h1>Reproduzindo aúdio</h1>
+    <p>Vamos aprender a usar aúdio em nosso site.</p>
+    <audio preload="auto" autoplay controls>
+        <source src="media/Everyday - Jason Farnham.mp3" type="audio/mpeg">
+        <source src="media/Everyday - Jason Farnham.ogg" type="audio/ogg">
+        <source src="media/Everyday - Jason Farnham.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não é compativel com o audio. <a href="media/Everyday - Jason Farnham.mp3">Clique aqui para baixar o audio.</a></p>
+    </audio>
+
+</body>
+</html>
